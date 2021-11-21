@@ -1,22 +1,13 @@
-function Player() {
-}
-Player.prototype.play = function(song) {
-  this.currentlyPlayingSong = song;
-  this.isPlaying = true;
-};
+class Menu{
 
-Player.prototype.pause = function() {
-  this.isPlaying = false;
-};
-
-Player.prototype.resume = function() {
-  if (this.isPlaying) {
-    throw new Error("song is already playing");
+  constructor() {
+    this.items = ('Chips - £1.50, Fish - £3.20, Pukka Pie - £2.00');
   }
 
-  this.isPlaying = true;
+  menuItems() {
+    return this.items;
+  }
+
 };
 
-Player.prototype.makeFavorite = function() {
-  this.currentlyPlayingSong.persistFavoriteStatus(true);
-};
+
