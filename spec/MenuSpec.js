@@ -8,7 +8,7 @@ describe('Menu', function() {
     menu = new Menu();
   });
 
-  it('displays menu', () => {
+  it('there are menu items', () => {
     expect(menu.menuItems()).toEqual(['Chips - £1.50', 'Fish - £3.20', 'Pukka Pie - £2.00']);
   });
 
