@@ -4,9 +4,9 @@ class Menu{
   //   // this.items = ('Chips - £1.50, Fish - £3.20, Pukka Pie - £2.00');
 
     this.items = { dishes: [
-        ['Chips - £1.50'],
-        ['Fish - £3.20'],
-        ['Pukka Pie - £2.00']
+        ['chips - £1.50'],
+        ['fish - £3.20'],
+        ['pukka pie - £2.00']
       ]
     }
   }

@@ -9,7 +9,7 @@ describe('Menu', function() {
   });
 
   it('there are menu items', () => {
-    expect(menu.menuItems()).toEqual(['Chips - £1.50', 'Fish - £3.20', 'Pukka Pie - £2.00']);
+    expect(menu.menuItems()).toEqual(['chips - £1.50', 'fish - £3.20', 'pukka pie - £2.00']);
   });
 
 });

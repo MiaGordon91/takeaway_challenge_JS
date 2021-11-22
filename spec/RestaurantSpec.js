@@ -11,8 +11,11 @@ describe('Restaurant', function() {
   });
 
   it('restaurant can access menu' , () => {
-      expect(restaurant.showMenu()).toEqual(['Chips - £1.50', 'Fish - £3.20', 'Pukka Pie - £2.00']);
+      expect(restaurant.showMenu()).toEqual(['chips - £1.50', 'fish - £3.20', 'pukka pie - £2.00']);
     });
 
+  it('customer can select items from menu' , () => {
+    expect(restaurant.placeOrder('chips')).toEqual('chips - £1.50');
+   });
 
 });
